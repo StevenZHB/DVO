@@ -39,7 +39,7 @@ def maybe_insert_system_message(messages, tokenizer):
         messages.insert(0, {"role": "system", "content": ""})
 
 def apply_chat_template(
-    example, tokenizer, task: Literal["sft", "generation", "rm", "dpo", "dqo"] = "sft", auto_insert_empty_system_msg: bool = True,
+    example, tokenizer, task: Literal["sft", "generation", "rm", "dpo", "dvo"] = "sft", auto_insert_empty_system_msg: bool = True,
 ):
     def _strip_prefix(s, pattern):
         # Use re.escape to escape any special characters in the pattern
@@ -94,7 +94,7 @@ def apply_chat_template(
             raise ValueError(
                 f"Could not format example as dialogue for `dpo` task! Require `[chosen, rejected]` keys but found {list(example.keys())}"
             )
-    elif task == "dqo":
+    elif task == "dvo":
         assert "q_credits" in example.keys(), f"q_credits not found in example keys {example.keys()}"
         assert "completions" in example.keys(), f"completions not found in example keys {example.keys()}"
 

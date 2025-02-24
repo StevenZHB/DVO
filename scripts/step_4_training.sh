@@ -1,3 +1,6 @@
+
+export PYTHONPATH=./:$PYTHONPATH
+
 # 检查输入参数
 if [ $# -lt 1 ]; then
     echo "Please follow the usage:"

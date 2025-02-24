@@ -11,7 +11,7 @@ from omegaconf import OmegaConf
 from mcts_math.agents import STEP_MCTS
 from mcts_math.solver import Solver
 from mcts_math.config import BaseConfig
-from react_demo import load_qaf, batch
+from utils import load_qaf, batch
 from transformers import AutoTokenizer
 import random
 from pathlib import Path

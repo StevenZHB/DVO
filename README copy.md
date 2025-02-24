@@ -72,9 +72,9 @@ bash scripts/step_3_build_data.sh <data_path> [threshold] [max_choosing_num] [sy
 ```
 **Parameters:**
 - `data_path`: Output path from Step 2 (results/model_name/sample_xxx.jsonl)
-- `threshold`: (Optional) Minimum number of choices for positive and negative samples
-- `max_choosing_num`: (Optional) Maximum number of choices for positive and negative samples
-- `system_prompt`: (Optional) System prompt for the model
+- `threshold`: (Optional)
+- `max_choosing_num`: (Optional)
+- `system_prompt`: (Optional)
 
 ### Step 4: Training
 ```

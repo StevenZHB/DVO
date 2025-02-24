@@ -7,6 +7,7 @@ if [ $# == '0' ]; then
     exit
 fi
 
+export PYTHONPATH=./:$PYTHONPATH
 # run command
 config_file=$1
 data_file=$2

@@ -288,7 +288,8 @@ if __name__ == '__main__':
     sampled_pair_solutions = []
     files = glob(tree_jsonl)
     saved_jsonl_file = tree_jsonl.replace(f"results/{model_name}/",f"results/{model_name}/sampled_").replace("*.jsonl",".jsonl")
-
+    print(f"tree_jsonl: {tree_jsonl}")
+    print(f"Saved sampled data to: {saved_jsonl_file}")
     for file in files:
         print(f"Read in file:",file)
         with open(file, "r") as f:

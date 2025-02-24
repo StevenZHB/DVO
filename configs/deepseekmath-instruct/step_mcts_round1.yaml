@@ -1,7 +1,7 @@
 round_name: '1'
 mode: "step_mcts"
-model_dir: "deepseek-ai/deepseek-math-7b-instruct"
-ref_model_dir: "deepseek-ai/deepseek-math-7b-instruct"
+model_dir: "/zhanghongbo/.lustre_backup/cuihan/Super_MARIO_TINY/build_pattern_model/deepseekmath-instruct-step-sft/deepseekmath-instruct-pattern-sft"
+ref_model_dir: "/zhanghongbo/pretrained_models/deepseek-math-7b-instruct"
 swap_space: 16
 temperature: 1
 errors_threshold: 3

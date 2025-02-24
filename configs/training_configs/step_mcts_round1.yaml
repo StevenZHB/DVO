@@ -1,0 +1,46 @@
+# Model arguments
+model_name_or_path: "MODEL_PATH"
+model_revision: main
+torch_dtype: bfloat16
+use_flash_attention_2: true
+
+# Data training arguments
+# For definitions, see: src/h4/training/config.py
+dataset_mixer:
+  DATA_PATH: 1.0
+dataset_splits:
+- train_prefs
+- test_prefs
+preprocessing_num_workers: 24
+
+# DPOTrainer arguments
+bf16: true
+beta: 0.1
+do_eval: true
+evaluation_strategy: steps
+eval_steps: 0.1
+gradient_accumulation_steps: 8
+gradient_checkpointing: true
+learning_rate: 5.0e-7
+log_level: info
+logging_steps: 3
+lr_scheduler_type: cosine
+max_length: 1792
+num_train_epochs: 3
+loss_type: mse
+optim: adamw_torch
+report_to: wandb
+run_name: dvo_mse_deepstepmath_round1_lr_5e-7_beta_0_1_3
+output_dir: ./training_output/MODEL_NAME/
+per_device_train_batch_size: 2
+per_device_eval_batch_size: 2
+push_to_hub: false
+save_strategy: epoch
+save_total_limit: null
+seed: 42
+warmup_ratio: 0.1
+chat_template: ./models/deepseek-math-7b-instruct/template.jinja
+step_delim: []
+resume_from_checkpoint: False
+test_oom: False
+precompute_ref_log_probs: True
