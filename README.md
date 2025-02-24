@@ -12,7 +12,7 @@ Improving Chain-of-Thought Reasoning in LLMs with Refined Values</h1>
 
 
 # 🎉 News
-* **[2025.2.21]** The code is released!
+* **[2025.2.24]** The code is released!
 * **[2025.2.20]** The paper is relesed on arxiv! [\[link\]](https://arxiv.org/abs/2502.13723)
 
 
