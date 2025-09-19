@@ -12,6 +12,7 @@ Improving Chain-of-Thought Reasoning in LLMs with Refined Values</h1>
 
 
 # 🎉 News
+* **[2025.8.21]** The paper is accepted by ENMLP2025 as a Poster!
 * **[2025.2.24]** The code is released!
 * **[2025.2.20]** The paper is relesed on arxiv! [\[link\]](https://arxiv.org/abs/2502.13723)
 
